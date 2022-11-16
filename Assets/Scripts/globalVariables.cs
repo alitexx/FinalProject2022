@@ -10,4 +10,7 @@ public class globalVariables : MonoBehaviour
 
     // how much time the player has left
     public static float timer = 0;
+
+    public static string[] itemsToCollect; // new string[] { "Greg", "Kate", "Adam", "Mia" };
+
 }
