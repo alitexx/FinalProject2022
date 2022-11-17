@@ -5,68 +5,62 @@ using UnityEngine;
 public class title_Camera : MonoBehaviour
 {
     public float speed = 1;
-    private bool canMove;
-
-
-
-    /// <summary>
-    /// this code is very much NOT WORKING!!
-    /// i need to think of a better way to use it and go from there, it'll prolly be done by the end of today!
-    /// </summary>
+    float x, y;
     private void Update()
     {
-        canMove = true;
-        if (transform.eulerAngles.x < -40)
+        x = -Input.GetAxis("Mouse Y");
+        y = Input.GetAxis("Mouse X");
+
+        //Debug.Log(x);
+        if (transform.eulerAngles.x < 1) // make larger
         {
-            canMove = false;
-            if (transform.eulerAngles.y < 55)
-            {
-                transform.eulerAngles += new Vector3(0.1f, 0.1f, 0);
-            } else if ((transform.eulerAngles.y > 130))
-            {
-                transform.eulerAngles += new Vector3(0.1f, -0.1f, 0);
-            } else
-            {
-                // only x is at the edge
-                
-                transform.eulerAngles += new Vector3(0.1f, Input.GetAxis("Mouse X"), 0);
-            }
-        } else if ((transform.eulerAngles.x > 40))
-        {
-            canMove = false;
-            if (transform.eulerAngles.y < 55)
-            {
-                transform.eulerAngles += new Vector3(-0.1f, 0.1f, 0);
-            }
-            else if ((transform.eulerAngles.y > 130))
-            {
-                transform.eulerAngles += new Vector3(-0.1f, -0.1f, 0);
-            }
-            else
-            {
-                // only x is at the edge
-                Debug.Log("going UUUUUUUUUUUUUUUUUUPPPPPPP!!!!!!!!!!!!!");
-                transform.eulerAngles += new Vector3(-0.1f, Input.GetAxis("Mouse X"), 0);
-            }
+            x = 0.05f;
         }
-        //only y is at the limit
-        else if (transform.eulerAngles.y < 55)
+        else if (transform.eulerAngles.x > 40) // make smaller
         {
-            canMove = false;
-            transform.eulerAngles += new Vector3(-Input.GetAxis("Mouse Y"), 0.1f, 0);
+            x = -0.05f;
         }
-        else if ((transform.eulerAngles.y > 130))
+        if (transform.eulerAngles.y < 55) //make larger
         {
-            canMove = false;
-            transform.eulerAngles += new Vector3(-Input.GetAxis("Mouse Y"), -0.1f, 0);
+            y = 0.05f;
+            //transform.eulerAngles += new Vector3(-Input.GetAxis("Mouse Y"), 0.05f, 0);
+        }
+        else if ((transform.eulerAngles.y > 130)) // make smaller
+        {
+            y = -0.05f;
+            //transform.eulerAngles += new Vector3(-Input.GetAxis("Mouse Y"), -0.05f, 0);
         } 
         
-        
-        
-        if (canMove == true)
-        {
-            transform.eulerAngles += new Vector3(-Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0);
-        }
+        transform.eulerAngles += new Vector3(x, y, 0);
 
     }
 }
+//old code
+//if (transform.eulerAngles.y < 55)
+//{
+//    y = 0.05f;
+//    //transform.eulerAngles += new Vector3(0.05f, 0.05f, 0);
+//} else if ((transform.eulerAngles.y > 130))
+//{
+//    y = -0.05f;
+//    //transform.eulerAngles += new Vector3(0.05f, -0.05f, 0);
+//} else
+//{
+//    // only x is at the edge
+
+//    //transform.eulerAngles += new Vector3(0.05f, Input.GetAxis("Mouse X"), 0);
+//}
+//    if (transform.eulerAngles.y < 55)
+//    {
+//        transform.eulerAngles += new Vector3(-Input.GetAxis("Mouse Y"), 0.05f, 0);
+//    }
+//    else if ((transform.eulerAngles.y > 130))
+//    {
+//        transform.eulerAngles += new Vector3(-Input.GetAxis("Mouse Y"), -0.05f, 0);
+//    }
+//    else
+//    {
+//        //transform.eulerAngles += new Vector3(-Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0);
+//    }
+//}
+//only y is at the limit
