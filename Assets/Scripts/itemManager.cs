@@ -15,10 +15,22 @@ using TMPro;
 
 public class itemManager : MonoBehaviour
 {
-    private int[] randomNumbers = new int[] {0,0,0,0,0};
+    public static int[] randomNumbers = new int[] {0,0,0,0,0};
+    private static readonly Dictionary<int, string> itemsDict = new Dictionary<int, string>() // holds the key and the item 
+        {
+            { 1, "Item1" }, // change name according to whatever the item is
+            { 2, "Item2" },
+            { 3, "Item3" },
+            { 4, "Item4" },
+            { 5, "Item5" },
+            { 6, "Item6" },
+            { 7, "Item7" },
+            { 8, "Item8" },
+            { 9, "Item9" },
+            { 10, "Item10" }
+        };
 
     [SerializeField] TextMeshProUGUI item1, item2, item3, item4, item5;
-
 
     void generateRandomNumbers(int position)
     {
@@ -44,19 +56,6 @@ public class itemManager : MonoBehaviour
     void Start()
     {
         globalVariables.timer = 1;
-        var itemsDict = new Dictionary<int, string>() // holds the key and the item 
-        {
-            { 1, "Item1" }, // change name according to whatever the item is
-            { 2, "Item2" },
-            { 3, "Item3" },
-            { 4, "Item4" },
-            { 5, "Item5" },
-            { 6, "Item6" },
-            { 7, "Item7" },
-            { 8, "Item8" },
-            { 9, "Item9" },
-            { 10, "Item10" }
-        };
 
         generateRandomNumbers(0);
 
@@ -69,58 +68,5 @@ public class itemManager : MonoBehaviour
         item4.text = itemsDict[randomNumbers[3]];
         item5.text = itemsDict[randomNumbers[4]];
 
-    }
-
-    // item value vvv corresponds with the key,
-    // if the key = the item value and is actively
-    // sought after then the player found the item
-    public void itemClicked(int itemLocation) 
-    {
-        Debug.Log("I have been clicked!");
-        int valueFoundAt = -1; // used for position
-        for(int i = 0; i < globalVariables.itemsToCollect.Length; i++)
-        {
-            if (randomNumbers[i] == itemLocation) // if one of the ints we pulled is equal to the passed in int
-            {
-                // item has been found!
-                valueFoundAt = i;
-                break;
-            }
-        }
-        if (valueFoundAt != -1)
-        {
-            Debug.Log("Item has been found!");
-            itemFound(valueFoundAt); // theres a lot that needs to happen, use a new function
-        } else
-        {
-            Debug.Log("Item has NOT been found!");
-            // turn the item's collider red
-            // maybe play an error sound or smth
-        }
-    }
-
-    public void itemFound(int valueFoundAt) // only fires when an item is found, removes it from the list
-    {
-        randomNumbers[valueFoundAt] = -1;
-        // play a happy sfx or someone crossing something out. or both lol
-        switch (valueFoundAt)
-        {
-            case 0:
-                item1.fontStyle = FontStyles.Strikethrough;
-                break;
-            case 1:
-                item2.fontStyle = FontStyles.Strikethrough;
-                break;
-            case 2:
-                item3.fontStyle = FontStyles.Strikethrough;
-                break;
-            case 3:
-                item4.fontStyle = FontStyles.Strikethrough;
-                break;
-            case 4:
-                item5.fontStyle = FontStyles.Strikethrough;
-                break;
-        }
-        // find out how to grab an item from the workspace; dont delete, hide.
     }
 }
