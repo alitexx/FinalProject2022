@@ -31,7 +31,13 @@ public class RayCastingMouseDetection : MonoBehaviour
             else if ((pastHit != hit.collider.name) && (pastHit.Substring(0, 4) == "ITEM"))
             {
                 //Debug.Log(GameObject.Find(pastHit));
-                (GameObject.Find(pastHit).GetComponent<Outline>().OutlineWidth) = 0f;
+                try
+                {
+                    (GameObject.Find(pastHit).GetComponent<Outline>().OutlineWidth) = 0f;
+                } catch
+                {
+                    pastHit = hit.collider.name;
+                }
             }
             pastHit = hit.collider.name;
         }
@@ -57,13 +63,12 @@ public class RayCastingMouseDetection : MonoBehaviour
         }
         if (valueFoundAt != -1)
         {
-            Debug.Log("Item has been found!");
             itemFound(valueFoundAt); // theres a lot that needs to happen, use a new function
         }
         else
         {
             Debug.Log("Item has NOT been found!");
-            // turn the item's collider red
+            (hit.collider.GetComponent<Outline>().OutlineColor) = Color.red;
             // maybe play an error sound or smth
         }
     }
@@ -71,6 +76,9 @@ public class RayCastingMouseDetection : MonoBehaviour
     public void itemFound(int valueFoundAt) // only fires when an item is found, removes it from the list
     {
         itemManager.randomNumbers[valueFoundAt] = -1;
+        Debug.Log(hit.collider.gameObject);
+        hit.collider.gameObject.SetActive(false);
+        //hit.collider.gameObject.GetComponent<MeshRenderer>().enabled = true;
         // play a happy sfx or someone crossing something out. or both lol
         switch (valueFoundAt)
         {

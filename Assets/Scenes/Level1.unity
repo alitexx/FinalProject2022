@@ -2270,7 +2270,7 @@ GameObject:
   - component: {fileID: 438503698}
   m_Layer: 0
   m_Name: itemManagerHolder
-  m_TagString: Untagged
+  m_TagString: itemProcessor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4360,6 +4360,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 805d948fedcd7b749ac47cd45d0e14c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item1: {fileID: 882470549}
+  item2: {fileID: 1580086118}
+  item3: {fileID: 385001650}
+  item4: {fileID: 2096217413}
+  item5: {fileID: 538678356}
 --- !u!114 &963194232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5465,7 +5470,7 @@ GameObject:
   - component: {fileID: 1378397423}
   - component: {fileID: 1378397422}
   m_Layer: 0
-  m_Name: ITEM
+  m_Name: ITEM1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
