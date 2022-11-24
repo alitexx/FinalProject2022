@@ -17,17 +17,21 @@ public class pauseManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            player.SetActive(!player.activeInHierarchy);
-            cam2.enabled = !cam2.enabled;
-            pauseMenu.enabled = !pauseMenu.enabled;
-            if (pauseMenu.enabled == true)
-            {
-                Cursor.lockState = CursorLockMode.None;
-            } else
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-            }
-            
+            togglePause();
+        }
+    }
+    public void togglePause()
+    {
+        player.SetActive(!player.activeInHierarchy);
+        cam2.enabled = !cam2.enabled;
+        pauseMenu.enabled = !pauseMenu.enabled;
+        if (pauseMenu.enabled == true)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 }
