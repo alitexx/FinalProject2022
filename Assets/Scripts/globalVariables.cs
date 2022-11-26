@@ -11,6 +11,8 @@ public class globalVariables : MonoBehaviour
     // how much time the player has left
     public static float timer = 0;
 
-    //public static string[] itemsToCollect;
+    public static float bestTimeLevel1 = 0;
+
+    public static float bestTimeOverall = 0;
 
 }

@@ -10,6 +10,8 @@ public class RayCastingMouseDetection : MonoBehaviour
     RaycastHit hit;
     string pastHit = "IAMASTRING";
     [SerializeField] TextMeshProUGUI item1, item2, item3, item4, item5;
+    [SerializeField] Canvas winGUI;
+    [SerializeField] GameObject pauseManager;
 
     void Update()
     {
@@ -99,5 +101,12 @@ public class RayCastingMouseDetection : MonoBehaviour
                 break;
         }
         // find out how to grab an item from the workspace; dont delete, hide.
+        globalVariables.itemsCollected++;
+        if( globalVariables.itemsCollected >= 5)
+        {// game has been won!
+            // win script fires when this is set to active
+            winGUI.gameObject.SetActive(true);
+            pauseManager.SetActive(false); // disabling it means that the player cannot pause right now
+        }
     }
 }
