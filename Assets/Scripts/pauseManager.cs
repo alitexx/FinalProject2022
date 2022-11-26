@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class pauseManager : MonoBehaviour
 {
     [SerializeField] Camera cam2;
     [SerializeField] GameObject player;
     [SerializeField] Canvas pauseMenu;
+    [SerializeField] TextMeshProUGUI levelHS;
 
     void Start()
     {
@@ -29,6 +31,7 @@ public class pauseManager : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 0f;
+            levelHS.text = ("Fastest Time on Level 1:" + ((int)(globalVariables.timer)).ToString());
         }
         else
         {

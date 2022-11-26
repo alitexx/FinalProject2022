@@ -2202,6 +2202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30bfecc23162e7e408e8ffc863a533a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeTotal: {fileID: 2120752668}
 --- !u!1 &357157053
 GameObject:
   m_ObjectHideFlags: 0
@@ -3359,6 +3360,7 @@ MonoBehaviour:
   cam2: {fileID: 1511504171}
   player: {fileID: 381623621}
   pauseMenu: {fileID: 1033534125}
+  levelHS: {fileID: 1359458267}
 --- !u!114 &438503702
 MonoBehaviour:
   m_ObjectHideFlags: 0
