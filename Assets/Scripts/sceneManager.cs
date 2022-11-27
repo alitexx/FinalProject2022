@@ -25,6 +25,7 @@ public class sceneManager : MonoBehaviour
         {
             debounce = false;
             StartCoroutine(FadeBlackOutSquare(sceneName)); // to fade in
+            debounce = true;
         }
     }
 
@@ -32,6 +33,11 @@ public class sceneManager : MonoBehaviour
     {
         Color objectColor = blackOutSquare.GetComponent<Image>().color;
         float fadeAmount;
+        if (Time.deltaTime == 0f)
+        {
+            Time.timeScale = 0.1f;
+            fadeSpeed = 50;
+        }
 
         // an if statement in here that checks if the player is entering the game itself,
         // if so then change the level txt accordingly
@@ -40,6 +46,7 @@ public class sceneManager : MonoBehaviour
         {
             while (blackOutSquare.GetComponent<Image>().color.a < 1)
             {
+
                 fadeAmount = objectColor.a + (fadeSpeed * Time.deltaTime);
 
                 objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, fadeAmount);
@@ -49,8 +56,8 @@ public class sceneManager : MonoBehaviour
 
             while (blackOutSquare.GetComponent<Image>().color.a >= 1)
             {
-                Debug.Log("I have loaded the level!");
                 SceneManager.LoadScene(beginLevel);
+                Time.timeScale = 1f;
                 break;
             }
         }
