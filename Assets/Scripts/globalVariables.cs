@@ -12,7 +12,7 @@ public class globalVariables : MonoBehaviour
     public static float timer = 0;
 
     public static float bestTimeLevel1 = 0;
-
-    public static float bestTimeOverall = 0;
+    // local is for save data
+    public static float localBestTimeLevel1 = 0;
 
 }

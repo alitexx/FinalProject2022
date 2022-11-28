@@ -3,15 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-//public class NumberWizard : MonoBehaviour
-//{
-//    [SerializeField] TextMeshProUGUI m_Object;
-
-//    void Start()
-//    {
-//        m_Object..text = "Enter Your Text Here";
-//    }
-//}
 
 public class itemManager : MonoBehaviour
 {
@@ -55,11 +46,11 @@ public class itemManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        globalVariables.timer = 1;
+        // reset globals
+        globalVariables.timer = 0;
+        globalVariables.itemsCollected = 0;
 
         generateRandomNumbers(0);
-
-        Debug.Log("numbers being generated....");
 
         // changes text on the list to fit the ones generated
         item1.text = itemsDict[randomNumbers[0]];
