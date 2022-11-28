@@ -5,7 +5,7 @@ using System;
 public class manageSaveData : MonoBehaviour
 {
     [SerializeField] TextAsset textFile;
-    public void WriteString(float writeToFile)
+    public void WriteString(int writeToFile)
     {
         //delete all text in the file
         File.WriteAllText(AssetDatabase.GetAssetPath(textFile), string.Empty);
@@ -31,10 +31,11 @@ public class manageSaveData : MonoBehaviour
     }
     private void Start()
     {
+        globalVariables.localBestTimeLevel1 = globalVariables.timer;
         ReadString();
         if (globalVariables.localBestTimeLevel1 > globalVariables.bestTimeLevel1)
         {
-            WriteString(globalVariables.localBestTimeLevel1);
+            WriteString((int)globalVariables.localBestTimeLevel1);
         }
     }
 }

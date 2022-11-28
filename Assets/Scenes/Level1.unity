@@ -4090,6 +4090,7 @@ MonoBehaviour:
   player: {fileID: 381623621}
   pauseMenu: {fileID: 1033534125}
   levelHS: {fileID: 1359458267}
+  currentTime: {fileID: 628271195}
 --- !u!114 &438503702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5149,7 +5150,7 @@ GameObject:
   - component: {fileID: 628271196}
   - component: {fileID: 628271195}
   m_Layer: 5
-  m_Name: overallHighScore
+  m_Name: currentTime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
