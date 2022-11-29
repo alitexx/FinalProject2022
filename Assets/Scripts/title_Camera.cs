@@ -38,7 +38,7 @@ public class title_Camera : MonoBehaviour
             //transform.eulerAngles += new Vector3(-Input.GetAxis("Mouse Y"), -0.05f, 0);
         }
 
-        transform.eulerAngles += new Vector3(x, y, 0);
+        transform.eulerAngles += new Vector3(x/2, y/2, 0);
 
     }
 }

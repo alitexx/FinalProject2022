@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18387751, g: 0.22877134, b: 0.30164135, a: 1}
+  m_IndirectSpecularColor: {r: 0.18387811, g: 0.22877197, b: 0.3016427, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -917,7 +917,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d9118d97d69add4abaaa11a9ad84839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFile: {fileID: 4900000, guid: 3bb0435e2a7177544be894f5def2a5c2, type: 3}
 --- !u!4 &920913596
 Transform:
   m_ObjectHideFlags: 0
@@ -1138,6 +1137,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ce15bdb7ef070ea4b9bfe0060b4d9192, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6722085885383957590, guid: ce15bdb7ef070ea4b9bfe0060b4d9192, type: 3}
+      propertyPath: m_Intensity
+      value: 282.59
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ce15bdb7ef070ea4b9bfe0060b4d9192, type: 3}
       propertyPath: m_Name
@@ -1524,8 +1527,8 @@ Camera:
   m_GameObject: {fileID: 1986062464}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 1, g: 0.9292453, b: 0.99434936, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
