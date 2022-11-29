@@ -25,12 +25,12 @@ public class RayCastingMouseDetection : MonoBehaviour
                 {
                     //Debug.Log(((string)hit.collider.name).Substring(4, 1));
                     // itemManagerHolder should be the ONLY THING with this tag
-                    itemClicked(Int32.Parse(((string)hit.collider.name).Substring(4, 1)));
+                    itemClicked(Int32.Parse(((string)hit.collider.name).Substring(4, 2)));
                     
                 }
             } 
             // if the last item was an item, and the current item is not an item
-            else if ((pastHit != hit.collider.name) && (pastHit.Substring(0, 4) == "ITEM"))
+            else if ((pastHit.Substring(0, 4) == "ITEM") && (pastHit.Substring(4, 2) != ((string)hit.collider.name).Substring(4, 2)))
             {
                 //Debug.Log(GameObject.Find(pastHit));
                 try

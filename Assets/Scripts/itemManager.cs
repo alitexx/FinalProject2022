@@ -9,16 +9,29 @@ public class itemManager : MonoBehaviour
     public static int[] randomNumbers = new int[] {0,0,0,0,0};
     private static readonly Dictionary<int, string> itemsDict = new Dictionary<int, string>() // holds the key and the item 
         {
-            { 1, "Item1" }, // change name according to whatever the item is
-            { 2, "Item2" },
-            { 3, "Item3" },
-            { 4, "Item4" },
-            { 5, "Item5" },
-            { 6, "Item6" },
-            { 7, "Item7" },
-            { 8, "Item8" },
-            { 9, "Item9" },
-            { 10, "Item10" }
+            { 10, "Cutting Board" }, // change name according to whatever the item is
+            { 11, "" },
+            { 12, "Red Book" },
+            { 13, "Green Book" },
+            { 14, "'VICTORY' Book" },
+            { 15, "Item5" },
+            { 16, "Item6" },
+            { 17, "'touchstone' Book" },
+            { 18, "Item8" },
+            { 19, "'Survive until dawn' Book" },
+            { 20, "'MAZE' Book" },
+            { 21, "Item9" },
+            { 22, "Coffee Cup" },
+            { 23, "Corn Flakes" },
+            { 24, "Cereal Bowl" },
+            { 25, "Glass" },
+            { 26, "Knife" },
+            { 27, "Laptop" },
+            { 28, "Painting" },
+            { 29, "Frying Pan" },
+            { 30, "Stack of Plates" },
+            { 31, "Spoon" },
+            { 32, "Toaster" }
         };
 
     [SerializeField] TextMeshProUGUI item1, item2, item3, item4, item5;
@@ -27,7 +40,7 @@ public class itemManager : MonoBehaviour
     {
         for (int i = position; i < 5; i++)
         {
-            int randomNum = (int)(Random.Range(1.0f, 10.0f));
+            int randomNum = (int)(Random.Range(10.0f, 32.0f));
             for (int j = 0; j < randomNumbers.Length; j++)
             {
                 if (randomNum == randomNumbers[j])
