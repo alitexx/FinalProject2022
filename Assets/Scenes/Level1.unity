@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -249,7 +249,6 @@ GameObject:
   - component: {fileID: 19726708}
   - component: {fileID: 19726707}
   - component: {fileID: 19726706}
-  - component: {fileID: 19726709}
   m_Layer: 0
   m_Name: BCabnitDoor (1)
   m_TagString: Untagged
@@ -322,19 +321,6 @@ Transform:
   m_Father: {fileID: 1369011172}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &19726709
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 19726705}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.24611098, y: 0.9020696, z: 1.5539496}
-  m_Center: {x: 0.06331691, y: -0.33198804, z: -0.13867554}
 --- !u!1 &21056367
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,7 +485,6 @@ GameObject:
   - component: {fileID: 40663532}
   - component: {fileID: 40663534}
   - component: {fileID: 40663533}
-  - component: {fileID: 40663535}
   m_Layer: 0
   m_Name: BCabnitDoor (4)
   m_TagString: Untagged
@@ -572,19 +557,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40663531}
   m_Mesh: {fileID: 3048851310703494, guid: c0f703bf3c2175e498ab2ca34aecd622, type: 3}
---- !u!65 &40663535
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40663531}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.2461111, y: 0.9020699, z: 1.5539498}
-  m_Center: {x: 0.06331742, y: -0.331988, z: -0.13867544}
 --- !u!1 &65271419
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,7 +1078,6 @@ GameObject:
   - component: {fileID: 98697626}
   - component: {fileID: 98697628}
   - component: {fileID: 98697627}
-  - component: {fileID: 98697629}
   m_Layer: 0
   m_Name: BCabnitDoor (1)
   m_TagString: Untagged
@@ -1179,19 +1150,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98697625}
   m_Mesh: {fileID: 3048851310703494, guid: c0f703bf3c2175e498ab2ca34aecd622, type: 3}
---- !u!65 &98697629
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98697625}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.24611098, y: 0.9020696, z: 1.5539496}
-  m_Center: {x: 0.06331691, y: -0.33198828, z: -0.13867542}
 --- !u!1 &109178395
 GameObject:
   m_ObjectHideFlags: 0
@@ -2032,7 +1990,6 @@ GameObject:
   - component: {fileID: 196670808}
   - component: {fileID: 196670810}
   - component: {fileID: 196670809}
-  - component: {fileID: 196670811}
   m_Layer: 0
   m_Name: BCabnitDoor (2)
   m_TagString: Untagged
@@ -2105,19 +2062,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 196670807}
   m_Mesh: {fileID: 3048851310703494, guid: c0f703bf3c2175e498ab2ca34aecd622, type: 3}
---- !u!65 &196670811
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196670807}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.24611098, y: 0.9020696, z: 1.5539496}
-  m_Center: {x: 0.06331691, y: -0.33198804, z: -0.1386753}
 --- !u!1 &215658092
 GameObject:
   m_ObjectHideFlags: 0
@@ -2248,11 +2192,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011836274088, guid: 2b2f272f9ab448a429a68c3a3308d4fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.895
+      value: -3.145
       objectReference: {fileID: 0}
     - target: {fileID: 4000011836274088, guid: 2b2f272f9ab448a429a68c3a3308d4fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.087
+      value: 1.213
       objectReference: {fileID: 0}
     - target: {fileID: 4000011836274088, guid: 2b2f272f9ab448a429a68c3a3308d4fc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4330,7 +4274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4803934733476274, guid: 573c24db696ae0b4091b43e2066b558d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.273
+      value: 3.47
       objectReference: {fileID: 0}
     - target: {fileID: 4803934733476274, guid: 573c24db696ae0b4091b43e2066b558d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4338,7 +4282,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4803934733476274, guid: 573c24db696ae0b4091b43e2066b558d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.261
+      value: -3.826
       objectReference: {fileID: 0}
     - target: {fileID: 4803934733476274, guid: 573c24db696ae0b4091b43e2066b558d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4381,7 +4325,6 @@ GameObject:
   - component: {fileID: 424957986}
   - component: {fileID: 424957988}
   - component: {fileID: 424957987}
-  - component: {fileID: 424957989}
   m_Layer: 0
   m_Name: BCabnitDoor (1)
   m_TagString: Untagged
@@ -4454,19 +4397,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424957985}
   m_Mesh: {fileID: 3048851310703494, guid: c0f703bf3c2175e498ab2ca34aecd622, type: 3}
---- !u!65 &424957989
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424957985}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.24611098, y: 0.9020696, z: 1.5539496}
-  m_Center: {x: 0.06331691, y: -0.33198792, z: -0.13867554}
 --- !u!1 &425340726
 GameObject:
   m_ObjectHideFlags: 0
@@ -5424,7 +5354,6 @@ GameObject:
   - component: {fileID: 577129898}
   - component: {fileID: 577129900}
   - component: {fileID: 577129899}
-  - component: {fileID: 577129901}
   m_Layer: 0
   m_Name: BCabnitDoor (2)
   m_TagString: Untagged
@@ -5497,19 +5426,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577129897}
   m_Mesh: {fileID: 3048851310703494, guid: c0f703bf3c2175e498ab2ca34aecd622, type: 3}
---- !u!65 &577129901
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 577129897}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.24611098, y: 0.9020696, z: 1.5539496}
-  m_Center: {x: 0.06331691, y: -0.33198828, z: -0.1386753}
 --- !u!1 &579275715
 GameObject:
   m_ObjectHideFlags: 0
@@ -5585,7 +5501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4285025707697314, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.452
+      value: -6.29
       objectReference: {fileID: 0}
     - target: {fileID: 4285025707697314, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6067,7 +5983,6 @@ GameObject:
   - component: {fileID: 674417804}
   - component: {fileID: 674417806}
   - component: {fileID: 674417805}
-  - component: {fileID: 674417807}
   m_Layer: 0
   m_Name: BCabnitDoor (3)
   m_TagString: Untagged
@@ -6140,19 +6055,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674417803}
   m_Mesh: {fileID: 3048851310703494, guid: c0f703bf3c2175e498ab2ca34aecd622, type: 3}
---- !u!65 &674417807
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674417803}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.2461111, y: 0.9020699, z: 1.5539498}
-  m_Center: {x: 0.06331742, y: -0.331988, z: -0.13867562}
 --- !u!1 &689018772
 GameObject:
   m_ObjectHideFlags: 0
@@ -7647,7 +7549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.45000005, z: 0}
+  m_LocalPosition: {x: 0, y: 0.45000005, z: 0.047}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9551,7 +9453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4746999718155162, guid: da39b72aa18fa5e48b10d7ec95000d35, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.48
+      value: -6.318
       objectReference: {fileID: 0}
     - target: {fileID: 4746999718155162, guid: da39b72aa18fa5e48b10d7ec95000d35, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9799,7 +9701,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215534477}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.269, y: -0.663, z: -2.646}
+  m_LocalPosition: {x: -0.008, y: -0.574, z: -2.646}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14280,7 +14182,6 @@ GameObject:
   - component: {fileID: 2004591085}
   - component: {fileID: 2004591087}
   - component: {fileID: 2004591086}
-  - component: {fileID: 2004591088}
   m_Layer: 0
   m_Name: BCabnitDoor (2)
   m_TagString: Untagged
@@ -14353,19 +14254,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004591084}
   m_Mesh: {fileID: 3048851310703494, guid: c0f703bf3c2175e498ab2ca34aecd622, type: 3}
---- !u!65 &2004591088
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2004591084}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.24611098, y: 0.9020696, z: 1.5539496}
-  m_Center: {x: 0.06331691, y: -0.33198774, z: -0.13867536}
 --- !u!1001 &2013216797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14395,7 +14283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4899968692712328, guid: 32cf7cb5324804148862798ee1f49df8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.231
+      value: 3.428
       objectReference: {fileID: 0}
     - target: {fileID: 4899968692712328, guid: 32cf7cb5324804148862798ee1f49df8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14403,7 +14291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4899968692712328, guid: 32cf7cb5324804148862798ee1f49df8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.303
+      value: -3.8679998
       objectReference: {fileID: 0}
     - target: {fileID: 4899968692712328, guid: 32cf7cb5324804148862798ee1f49df8, type: 3}
       propertyPath: m_LocalRotation.w
