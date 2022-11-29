@@ -10,10 +10,11 @@ public class winScreen : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.None;
-        Time.timeScale = 0f;
         // if high score is beaten
-        if (globalVariables.timer > globalVariables.bestTimeLevel1)
+        manageSaveData.ReadString();
+        if (globalVariables.timer < globalVariables.bestTimeLevel1)
         {
+            manageSaveData.WriteString((int)globalVariables.timer);
             timeTotal.text = ("You found the items in " + ((int)(globalVariables.timer)).ToString() + " seconds! \n \nNew high score!");
         }
         else // if high score was NOT beaten

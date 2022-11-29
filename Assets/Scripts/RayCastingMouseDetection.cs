@@ -52,7 +52,6 @@ public class RayCastingMouseDetection : MonoBehaviour
 
     public void itemClicked(int itemLocation)
     {
-        Debug.Log("I have been clicked!");
         int valueFoundAt = -1; // used for position
         for (int i = 0; i < itemManager.randomNumbers.Length; i++)
         {
@@ -69,7 +68,6 @@ public class RayCastingMouseDetection : MonoBehaviour
         }
         else
         {
-            Debug.Log("Item has NOT been found!");
             (hit.collider.GetComponent<Outline>().OutlineColor) = Color.red;
             // maybe play an error sound or smth
         }

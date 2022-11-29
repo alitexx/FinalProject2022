@@ -8,7 +8,7 @@ public class pauseManager : MonoBehaviour
     [SerializeField] Camera cam2;
     [SerializeField] GameObject player;
     [SerializeField] Canvas pauseMenu;
-    [SerializeField] TextMeshProUGUI levelHS, currentTime;
+    [SerializeField] TextMeshProUGUI levelHS, currentTime, levelHSBG, currentTimeBG;
 
     void Start()
     {
@@ -31,8 +31,10 @@ public class pauseManager : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 0f;
-            levelHS.text = ("Fastest Time on this level:" + ((int)(globalVariables.bestTimeLevel1)).ToString());
+            levelHS.text = ("Fastest Time on this level: " + ((int)(globalVariables.bestTimeLevel1)).ToString());
             currentTime.text = ("Current Time: " + ((int)(globalVariables.timer)).ToString());
+            levelHSBG.text = ("Fastest Time on this level: " + ((int)(globalVariables.bestTimeLevel1)).ToString());
+            currentTimeBG.text = ("Current Time: " + ((int)(globalVariables.timer)).ToString());
         }
         else
         {
