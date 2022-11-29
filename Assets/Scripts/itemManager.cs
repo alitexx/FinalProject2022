@@ -21,7 +21,7 @@ public class itemManager : MonoBehaviour
     private static readonly Dictionary<int, string> itemsDict = new Dictionary<int, string>() // holds the key and the item 
         {
             { 10, "Cutting Board" }, // change name according to whatever the item is
-            { 11, "" }, // we still need an item
+            { 11, "Newspaper" },
             { 12, "Red Book" },
             { 13, "Green Book" },
             { 14, "'VICTORY' Book" },
@@ -31,7 +31,7 @@ public class itemManager : MonoBehaviour
             { 18, "Canned Food" },
             { 19, "Cooking Oil" },
             { 20, "'MAZE' Book" },
-            { 21, "Item9" }, // we still need a 21st item
+            { 21, "Paper Towel" },
             { 22, "Coffee Cup" },
             { 23, "Corn Flakes" },
             { 24, "Cereal Bowl" },
@@ -48,7 +48,9 @@ public class itemManager : MonoBehaviour
             { 35, "Candy Bar" },
             { 36, "Chips" },
             { 37, "Pineapple" },
-            { 38, "Purple Soda" }
+            { 38, "Purple Soda" },
+            { 39, "Blanket" },
+            { 40, "Pillow" }
         };
 
     [SerializeField] TextMeshProUGUI item1, item2, item3, item4, item5;
