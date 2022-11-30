@@ -7854,6 +7854,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f06bfaf672ec2e438d2c4dfeb8352ff, type: 3}
+--- !u!1 &487460257 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5f06bfaf672ec2e438d2c4dfeb8352ff, type: 3}
+  m_PrefabInstance: {fileID: 487460256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &487460258
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487460257}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7671663039118296226, guid: 5f06bfaf672ec2e438d2c4dfeb8352ff, type: 3}
 --- !u!1 &499167135
 GameObject:
   m_ObjectHideFlags: 0
@@ -11391,7 +11410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3019568617730713240, guid: 5dd5a1ab6047d4848b7668734815016f, type: 3}
       propertyPath: m_Name
-      value: Simple_02
+      value: ITEM42_Keys
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dd5a1ab6047d4848b7668734815016f, type: 3}
@@ -11418,6 +11437,20 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!64 &872619807
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872619805}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -827323528257501046, guid: 4def557500ba7364a9225f1167fc9bcf, type: 3}
 --- !u!1 &882470547
 GameObject:
   m_ObjectHideFlags: 0
@@ -11995,6 +12028,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ca34823eacae24488880a2b46422a46, type: 3}
+--- !u!1 &936373725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6ca34823eacae24488880a2b46422a46, type: 3}
+  m_PrefabInstance: {fileID: 936373724}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &936373726
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936373725}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7867386367475716087, guid: 6ca34823eacae24488880a2b46422a46, type: 3}
 --- !u!1 &950831803
 GameObject:
   m_ObjectHideFlags: 0
@@ -14023,7 +14075,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 39bcb2bc55ab6c14a8d3f24fc5e07575, type: 3}
       propertyPath: m_Name
-      value: trash
+      value: ITEM43_TrashBin
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 39bcb2bc55ab6c14a8d3f24fc5e07575, type: 3}
       propertyPath: m_RootOrder
@@ -14106,6 +14158,20 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!64 &1041742613
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041742611}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 39bcb2bc55ab6c14a8d3f24fc5e07575, type: 3}
 --- !u!1 &1044565137
 GameObject:
   m_ObjectHideFlags: 0
@@ -15320,7 +15386,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1261993076855398327, guid: 57e3a8d1a8f7945468f6f50ed41c0385, type: 3}
       propertyPath: m_Name
-      value: Kettle_Prefab
+      value: ITEM41_Kettle
       objectReference: {fileID: 0}
     - target: {fileID: 1929881126106006797, guid: 57e3a8d1a8f7945468f6f50ed41c0385, type: 3}
       propertyPath: m_RootOrder
@@ -18262,7 +18328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ad9a80751a2b14245889ce0981a71546, type: 3}
       propertyPath: m_Name
-      value: Plant 7
+      value: ITEM44_Plant(1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad9a80751a2b14245889ce0981a71546, type: 3}
@@ -18289,6 +18355,20 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!64 &1435805240
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435805238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2135019871829722232, guid: ad9a80751a2b14245889ce0981a71546, type: 3}
 --- !u!1 &1437526941
 GameObject:
   m_ObjectHideFlags: 0
