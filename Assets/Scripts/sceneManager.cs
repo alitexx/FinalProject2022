@@ -19,19 +19,17 @@ public class sceneManager : MonoBehaviour
     public void loadLevel(string sceneName)
     {
         Debug.Log("Changing Scenes!");
+        Cursor.lockState = CursorLockMode.Locked;
+        //if (Time.deltaTime == 0f)
+        //{
+        //    Time.timeScale = 1f;
+        //    Cursor.lockState = CursorLockMode.Locked;
+        //}
         StartCoroutine(FadeBlackOutSquare(sceneName));
     }
 
-
-
-
     public IEnumerator FadeBlackOutSquare(string beginLevel = "")
     {
-        if (Time.deltaTime == 0f)
-        {
-            Time.timeScale = 1f;
-            Cursor.lockState = CursorLockMode.Locked;
-        }
         anim.SetBool("Fade", true);
         yield return new WaitUntil(() => blackOutSquare.color.a == 1);
         Debug.Log(beginLevel);
