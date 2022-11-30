@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
@@ -392,7 +392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 0.016950846, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
@@ -1540,7 +1540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
@@ -2053,7 +2053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
@@ -2350,7 +2350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
@@ -3091,6 +3091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeTotal: {fileID: 2120752668}
+  allClickableObjects: {fileID: 2082152652}
 --- !u!1 &357157053
 GameObject:
   m_ObjectHideFlags: 0
@@ -3879,7 +3880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
@@ -4487,6 +4488,7 @@ MonoBehaviour:
   currentTime: {fileID: 628271195}
   levelHSBG: {fileID: 65271421}
   currentTimeBG: {fileID: 191261639}
+  allClickableObjects: {fileID: 2082152652}
 --- !u!114 &438503702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6317,7 +6319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
@@ -6359,7 +6361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
@@ -7724,7 +7726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
@@ -7864,7 +7866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
@@ -8303,7 +8305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
@@ -9449,7 +9451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
@@ -9601,7 +9603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
@@ -9643,7 +9645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
@@ -11033,7 +11035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
@@ -11546,7 +11548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1542729135
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12862,7 +12864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
@@ -14547,7 +14549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
-  outlineColor: {r: 0.078431375, g: 1, b: 0, a: 1}
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
   outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []

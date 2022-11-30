@@ -16,21 +16,11 @@ public class RayCastingMouseDetection : MonoBehaviour
     void Update()
     {
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hit, 5f))
+        if (Physics.Raycast(ray, out hit, 3f))
         {
-            //Debug.Log(pastHit.Substring(0, 4));
-            if (((string)hit.collider.name).Substring(0, 4) == "ITEM"){ // if it hits an item
-                (hit.collider.GetComponent<Outline>().OutlineWidth) = 5f;
-                if (Input.GetMouseButtonDown(0)) // player has clicked this object
-                {
-                    //Debug.Log(((string)hit.collider.name).Substring(4, 1));
-                    // itemManagerHolder should be the ONLY THING with this tag
-                    itemClicked(Int32.Parse(((string)hit.collider.name).Substring(4, 2)));
-                    
-                }
-            } 
+            
             // if the last item was an item, and the current item is not an item
-            else if ((pastHit.Substring(0, 4) == "ITEM") && (pastHit.Substring(4, 2) != ((string)hit.collider.name).Substring(4, 2)))
+            if ((pastHit.Substring(0, 4) == "ITEM") && (pastHit.Substring(4, 2) != ((string)hit.collider.name).Substring(4, 2)))
             {
                 //Debug.Log(GameObject.Find(pastHit));
                 try
@@ -39,6 +29,15 @@ public class RayCastingMouseDetection : MonoBehaviour
                 } catch
                 {
                     pastHit = hit.collider.name;
+                }
+            }
+            else if (((string)hit.collider.name).Substring(0, 4) == "ITEM")
+            { // if it hits an item
+                (hit.collider.GetComponent<Outline>().OutlineWidth) = 10f;
+                if (Input.GetMouseButtonDown(0)) // player has clicked this object
+                {
+                    // an item has been clicked, send value to itemClicked
+                    itemClicked(Int32.Parse(((string)hit.collider.name).Substring(4, 2)));
                 }
             }
             pastHit = hit.collider.name;
@@ -76,7 +75,6 @@ public class RayCastingMouseDetection : MonoBehaviour
     public void itemFound(int valueFoundAt) // only fires when an item is found, removes it from the list
     {
         itemManager.randomNumbers[valueFoundAt] = -1;
-        Debug.Log(hit.collider.gameObject);
         hit.collider.gameObject.SetActive(false);
         //hit.collider.gameObject.GetComponent<MeshRenderer>().enabled = true;
         // play a happy sfx or someone crossing something out. or both lol

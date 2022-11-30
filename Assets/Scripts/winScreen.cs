@@ -7,9 +7,12 @@ public class winScreen : MonoBehaviour
 {
     [SerializeField]
     TextMeshProUGUI timeTotal;
+    [SerializeField]
+    GameObject allClickableObjects;
     void Start()
     {
-        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Confined;
+        allClickableObjects.SetActive(false);
         // if high score is beaten
         manageSaveData.ReadString();
         if (globalVariables.timer < globalVariables.bestTimeLevel1)

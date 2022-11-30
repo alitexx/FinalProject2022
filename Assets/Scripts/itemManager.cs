@@ -59,7 +59,7 @@ public class itemManager : MonoBehaviour
     {
         for (int i = position; i < 5; i++)
         {
-            int randomNum = (int)(Random.Range(10.0f, 38.0f));
+            int randomNum = (int)(Random.Range(10.0f, 41.0f));
             for (int j = 0; j < randomNumbers.Length; j++)
             {
                 if (randomNum == randomNumbers[j])

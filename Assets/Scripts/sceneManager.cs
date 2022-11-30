@@ -30,6 +30,7 @@ public class sceneManager : MonoBehaviour
         if (Time.deltaTime == 0f)
         {
             Time.timeScale = 1f;
+            Cursor.lockState = CursorLockMode.Locked;
         }
         anim.SetBool("Fade", true);
         yield return new WaitUntil(() => blackOutSquare.color.a == 1);

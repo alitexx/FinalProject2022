@@ -7,17 +7,20 @@ public class manageSaveData : MonoBehaviour
     public static void WriteString(int writeToFile)
     {
         //delete all text in the file
-        File.WriteAllText("Assets/saveData.txt", string.Empty);
+        File.WriteAllText(Application.streamingAssetsPath + "/saveData.txt", string.Empty);
 
         //open file in write mode
-        StreamWriter writer = new StreamWriter("Assets/saveData.txt", true);
-        writer.Write(writeToFile);
-        writer.Close();
-        Debug.Log("Assets/saveData.txt");
+        File.WriteAllText(Application.streamingAssetsPath + "/saveData.txt", writeToFile.ToString());
+        //StreamWriter writer = new StreamWriter(Application.streamingAssetsPath + "/saveData.txt", true);
+        //StreamWriter writer = new StreamWriter("Assets/saveData.txt", true);
+        //writer.Write(writeToFile);
+        //writer.Close();
+        Debug.Log(writeToFile + " has been saved!");
     }
     public static void ReadString()
     {
-        StreamReader reader = new StreamReader("Assets/saveData.txt", true);
+        StreamReader reader = new StreamReader(Application.streamingAssetsPath + "/saveData.txt", true);
+        //StreamReader reader = new StreamReader("Assets/saveData.txt", true);
         string rawTXT = reader.ReadLine();
         reader.Close();
         // if we have level 2
