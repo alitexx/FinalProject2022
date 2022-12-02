@@ -30,9 +30,9 @@ public class pauseManager : MonoBehaviour
         if (pauseMenu.enabled == true)
         {
             Cursor.lockState = CursorLockMode.Confined;
-            levelHS.text = ("Fastest Time on this level: " + ((int)(globalVariables.bestTimeLevel1)).ToString());
+            levelHS.text = ("Fastest Time: " + ((int)(globalVariables.bestTimeLevel1)).ToString());
             currentTime.text = ("Current Time: " + ((int)(globalVariables.timer)).ToString());
-            levelHSBG.text = ("Fastest Time on this level: " + ((int)(globalVariables.bestTimeLevel1)).ToString());
+            levelHSBG.text = ("Fastest Time: " + ((int)(globalVariables.bestTimeLevel1)).ToString());
             currentTimeBG.text = ("Current Time: " + ((int)(globalVariables.timer)).ToString());
         }
         else

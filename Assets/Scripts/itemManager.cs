@@ -24,13 +24,13 @@ public class itemManager : MonoBehaviour
             { 11, "Newspaper" },
             { 12, "Red Book" },
             { 13, "Green Book" },
-            { 14, "'VICTORY' Book" },
-            { 15, "Potted Plant" },
+            { 14, "Stack of Books" },
+            { 15, "Potted Shrub" },
             { 16, "Bread" },
             { 17, "Apple" },
             { 18, "Canned Food" },
             { 19, "Cooking Oil" },
-            { 20, "'MAZE' Book" },
+            { 20, "D20" },
             { 21, "Paper Towel" },
             { 22, "Coffee Cup" },
             { 23, "Corn Flakes" },
@@ -50,7 +50,11 @@ public class itemManager : MonoBehaviour
             { 37, "Pineapple" },
             { 38, "Purple Soda" },
             { 39, "Blanket" },
-            { 40, "Pillow" }
+            { 40, "Pillow" },
+            { 41, "Kettle" },
+            { 42, "Keys" },
+            { 43, "Trash Bin" },
+            { 44, "Purple-leaved Plant" }
         };
 
     [SerializeField] TextMeshProUGUI item1, item2, item3, item4, item5;
@@ -59,7 +63,7 @@ public class itemManager : MonoBehaviour
     {
         for (int i = position; i < 5; i++)
         {
-            int randomNum = (int)(Random.Range(10.0f, 41.0f));
+            int randomNum = (int)(Random.Range(10.0f, 45.0f));
             for (int j = 0; j < randomNumbers.Length; j++)
             {
                 if (randomNum == randomNumbers[j])
