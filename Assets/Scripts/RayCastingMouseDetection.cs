@@ -12,8 +12,8 @@ public class RayCastingMouseDetection : MonoBehaviour
     [SerializeField] TextMeshProUGUI item1, item2, item3, item4, item5;
     [SerializeField] Canvas winGUI;
     [SerializeField] GameObject pauseManager;
-    public AudioSource Correct;
-    public AudioSource Incorrect;
+    public AudioClip correct;
+    public AudioClip incorrect;
 
     void Update()
     {
@@ -60,7 +60,6 @@ public class RayCastingMouseDetection : MonoBehaviour
             {
                 // item has been found!
                 valueFoundAt = i;
-                //Correct.Play();
                 break;
             }
         }
@@ -71,7 +70,7 @@ public class RayCastingMouseDetection : MonoBehaviour
         else
         {
             (hit.collider.GetComponent<Outline>().OutlineColor) = Color.red;
-            //Incorrect.Play();
+           //ncorrect.pl
             // maybe play an error sound or smth
         }
     }
@@ -80,6 +79,7 @@ public class RayCastingMouseDetection : MonoBehaviour
     {
         itemManager.randomNumbers[valueFoundAt] = -1;
         hit.collider.gameObject.SetActive(false);
+        //rrectSound.PlayOneShot(correct);
         //hit.collider.gameObject.GetComponent<MeshRenderer>().enabled = true;
         // play a happy sfx or someone crossing something out. or both lol
         switch (valueFoundAt)
