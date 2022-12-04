@@ -11,8 +11,7 @@ public class winScreen : MonoBehaviour
     [SerializeField] GameObject mainCamera;
     [SerializeField] GameObject pauseManagerItem;
     [SerializeField] GameObject gameTimer;
-    [SerializeField]
-    GameObject allClickableObjects;
+    [SerializeField] GameObject allClickableObjects;
     void Start()
     {
         gameTimer.SetActive(false);
@@ -20,6 +19,7 @@ public class winScreen : MonoBehaviour
 
         player.GetComponent<PlayerController>().enabled = false;
         mainCamera.GetComponent<MouseLook>().enabled = false;
+
 
         pauseManagerItem.SetActive(false);
         allClickableObjects.SetActive(false);
