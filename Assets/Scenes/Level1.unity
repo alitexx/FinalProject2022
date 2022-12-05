@@ -12463,8 +12463,8 @@ MonoBehaviour:
   item5: {fileID: 538678356}
   winGUI: {fileID: 338995522}
   pauseManager: {fileID: 438503697}
-  correct: {fileID: 0}
-  incorrect: {fileID: 0}
+  Correct: {fileID: 539173893}
+  Incorrect: {fileID: 2132922561}
 --- !u!114 &963194232
 MonoBehaviour:
   m_ObjectHideFlags: 0

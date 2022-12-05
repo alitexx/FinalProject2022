@@ -60,18 +60,18 @@ public class RayCastingMouseDetection : MonoBehaviour
             {
                 // item has been found!
                 valueFoundAt = i;
-                //Correct.Play();
                 break;
             }
         }
         if (valueFoundAt != -1)
         {
             itemFound(valueFoundAt); // theres a lot that needs to happen, use a new function
+            Correct.Play();
         }
         else
         {
             (hit.collider.GetComponent<Outline>().OutlineColor) = Color.red;
-            //Incorrect.Play();
+            Incorrect.Play();
             // maybe play an error sound or smth
         }
     }
