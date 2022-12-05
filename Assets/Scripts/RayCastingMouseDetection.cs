@@ -82,6 +82,7 @@ public class RayCastingMouseDetection : MonoBehaviour
         hit.collider.gameObject.SetActive(false);
         //hit.collider.gameObject.GetComponent<MeshRenderer>().enabled = true;
         // play a happy sfx or someone crossing something out. or both lol
+        //Correct.Play();
         switch (valueFoundAt)
         {
             case 0:
