@@ -9,6 +9,7 @@ public class title_Camera : MonoBehaviour
 
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         Cursor.lockState = CursorLockMode.Confined;
     }
     private void Update()

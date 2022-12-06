@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18387751, g: 0.22877134, b: 0.30164135, a: 1}
+  m_IndirectSpecularColor: {r: 0.18387811, g: 0.22877197, b: 0.3016427, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: c5377c1bc897c9f4f9fd772f393edb2f, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 3dbb22a4b91a74740bab451b2b3fac62, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1047,7 +1047,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1435,6 +1435,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8700617353114198275, guid: ce15bdb7ef070ea4b9bfe0060b4d9192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce15bdb7ef070ea4b9bfe0060b4d9192, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1483,9 +1487,25 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 282.59
       objectReference: {fileID: 0}
+    - target: {fileID: -6722085885383957590, guid: ce15bdb7ef070ea4b9bfe0060b4d9192, type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5197375361478167349, guid: ce15bdb7ef070ea4b9bfe0060b4d9192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ce15bdb7ef070ea4b9bfe0060b4d9192, type: 3}
       propertyPath: m_Name
       value: room
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce15bdb7ef070ea4b9bfe0060b4d9192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751845156429214089, guid: ce15bdb7ef070ea4b9bfe0060b4d9192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce15bdb7ef070ea4b9bfe0060b4d9192, type: 3}

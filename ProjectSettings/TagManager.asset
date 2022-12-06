@@ -5,16 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - itemProcessor
+  - hangingLights
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - lightsAroundHouse
   - Water
   - UI
   - Arm
   - FadeInOut
-  - 
+  - hangingLights
   - 
   - 
   - 
