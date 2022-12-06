@@ -29,6 +29,7 @@ public class winScreen : MonoBehaviour
         if (globalVariables.timer < globalVariables.bestTimeLevel1)
         {
             manageSaveData.WriteString((int)globalVariables.timer);
+            globalVariables.bestTimeLevel1 = globalVariables.timer;
             timeTotal.text = ("You found the items in " + ((int)(globalVariables.timer)).ToString() + " seconds! \n \nNew high score!");
         }
         else // if high score was NOT beaten
