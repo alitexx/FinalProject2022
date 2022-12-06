@@ -25,7 +25,7 @@ public class itemManager : MonoBehaviour
             { 12, "Red Book" },
             { 13, "Green Book" },
             { 14, "Stack of Books" },
-            { 15, "Potted Shrub" },
+            { 15, "Potted Tree" },
             { 16, "Bread" },
             { 17, "Apple" },
             { 18, "Canned Food" },
@@ -54,7 +54,7 @@ public class itemManager : MonoBehaviour
             { 41, "Kettle" },
             { 42, "Keys" },
             { 43, "Trash Bin" },
-            { 44, "Purple-leaved Plant" }
+            { 44, "Purple Plant" }
         };
 
     [SerializeField] TextMeshProUGUI item1, item2, item3, item4, item5;

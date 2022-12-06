@@ -13,6 +13,7 @@ public class RayCastingMouseDetection : MonoBehaviour
     [SerializeField] Canvas winGUI;
     [SerializeField] GameObject pauseManager;
     public AudioSource Correct;
+    public AudioSource WinAudio;
     public AudioSource Incorrect;
 
     void Update()
@@ -66,7 +67,7 @@ public class RayCastingMouseDetection : MonoBehaviour
         if (valueFoundAt != -1)
         {
             itemFound(valueFoundAt); // theres a lot that needs to happen, use a new function
-            Correct.Play();
+            
         }
         else
         {
@@ -103,11 +104,17 @@ public class RayCastingMouseDetection : MonoBehaviour
         }
         // find out how to grab an item from the workspace; dont delete, hide.
         globalVariables.itemsCollected++;
-        if( globalVariables.itemsCollected >= 5)
+        if (globalVariables.itemsCollected >= 5)
         {// game has been won!
+            // win script fires when this is set to active
             // win script fires when this is set to active
             winGUI.gameObject.SetActive(true);
             pauseManager.SetActive(false); // disabling it means that the player cannot pause right now
+            WinAudio.Play();
+        }
+        else
+        {
+            Correct.Play();
         }
     }
 }
