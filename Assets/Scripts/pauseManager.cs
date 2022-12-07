@@ -11,6 +11,9 @@ public class pauseManager : MonoBehaviour
     [SerializeField] Canvas pauseMenu;
     [SerializeField] TextMeshProUGUI levelHS, currentTime, levelHSBG, currentTimeBG;
     [SerializeField] GameObject allClickableObjects;
+    public AudioSource openPause;
+    public AudioSource closePause;
+    public AudioSource gameMusic;
 
 
     void Update()
@@ -29,6 +32,8 @@ public class pauseManager : MonoBehaviour
         pauseMenu.enabled = !pauseMenu.enabled;
         if (pauseMenu.enabled == true)
         {
+            gameMusic.volume = 0.25f;
+            openPause.Play();
             Cursor.lockState = CursorLockMode.Confined;
             levelHS.text = ("Fastest Time: " + ((int)(globalVariables.bestTimeLevel1)).ToString());
             currentTime.text = ("Current Time: " + ((int)(globalVariables.timer)).ToString());
@@ -37,6 +42,8 @@ public class pauseManager : MonoBehaviour
         }
         else
         {
+            closePause.Play();
+            gameMusic.volume = 0.5f;
             Cursor.lockState = CursorLockMode.Locked;
         }
     }

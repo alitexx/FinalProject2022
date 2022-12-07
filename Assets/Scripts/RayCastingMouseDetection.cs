@@ -106,11 +106,11 @@ public class RayCastingMouseDetection : MonoBehaviour
         globalVariables.itemsCollected++;
         if (globalVariables.itemsCollected >= 5)
         {// game has been won!
-            // win script fires when this is set to active
+            WinAudio.Play();
+
             // win script fires when this is set to active
             winGUI.gameObject.SetActive(true);
             pauseManager.SetActive(false); // disabling it means that the player cannot pause right now
-            WinAudio.Play();
         }
         else
         {
